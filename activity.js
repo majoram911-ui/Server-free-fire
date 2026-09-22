@@ -20,5 +20,5 @@ function unlock(){try{audio=audio||new(window.AudioContext||window.webkitAudioCo
 function ring(){try{unlock();if(!audio)return;const t=audio.currentTime;[[880,0,.10],[660,.14,.08]].forEach(([freq,delay,vol])=>{const o=audio.createOscillator(),g=audio.createGain(),s=t+delay;o.type='sine';o.frequency.setValueAtTime(freq,s);g.gain.setValueAtTime(.0001,s);g.gain.exponentialRampToValueAtTime(vol,s+.015);g.gain.exponentialRampToValueAtTime(.0001,s+.11);o.connect(g);g.connect(audio.destination);o.start(s);o.stop(s+.12)})}catch(e){}}
 function show(){if(i>=activityOrder.length){shuffleNames();i=0}
 const n=activityOrder[i++];box.querySelector('.activity-text').textContent='🟢 '+n.charAt(0).toUpperCase()+n.slice(1)+' changed his Free Fire server';box.classList.remove('show');void box.offsetWidth;box.classList.add('show');ring();setTimeout(()=>box.classList.remove('show'),4300)}
-setTimeout(show,1200);setInterval(show,10000);
+setTimeout(show,1200);setInterval(show,15000);
 })();
