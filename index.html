@@ -2,50 +2,136 @@
 <html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
-<meta name="theme-color" content="#07080c">
-  <meta name="color-scheme" content="dark">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta name="description" content="Changer Server Free Fire — server region change requests and service information.">
-<title>Changer Server Free Fire</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#08090d">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="A clean, multilingual interface for Free Fire server change requests.">
+<title>Free Fire Server Change</title>
 <link rel="stylesheet" href="style-v4.css">
-<link rel="icon" type="image/jpeg" href="site-logo.jpg"></head>
+<link rel="icon" type="image/jpeg" href="site-logo.jpg">
+</head>
 <body>
-<div class="bg"></div>
-<header class="header">
-  <a class="brand" href="index.html"><span>Changer Server<br><b>Free Fire</b></span></a>
-  <nav id="nav">
-    <a href="#home" data-i18n="home">Home</a><a href="#service" data-i18n="service">Service</a><a href="#how" data-i18n="how">How it works</a><a href="#track" data-i18n="trackNav">Track</a><a href="#contact" data-i18n="contact">Contact</a>
-    <a class="admin-link" href="admin.html" data-i18n="admin">Admin</a>
+<div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+<header class="header" id="top">
+  <a class="brand" href="#home" aria-label="Free Fire Server Change">
+    <span class="brand-mark"><img src="site-logo.jpg" alt=""></span>
+    <span class="brand-copy">FREE FIRE <b>SERVER CHANGE</b></span>
+  </a>
+  <nav id="nav" aria-label="Primary navigation">
+    <a href="#home" data-i18n="home">Home</a>
+    <a href="#service" data-i18n="service">Service</a>
+    <a href="#how" data-i18n="how">How it works</a>
+    <a href="track.html" data-i18n="trackNav">Track</a>
+    <a href="#faq" data-i18n="faq">FAQ</a>
+    <a href="#contact" data-i18n="contact">Contact</a>
   </nav>
-  <select id="language" aria-label="Language" data-i18n-aria="languageLabel"><option value="en">English (Official)</option><option value="fr">Français</option><option value="ar">العربية</option><option value="pt">Português</option><option value="es">Español</option></select>
-  <button class="menu" id="menu" aria-label="Open menu">☰</button>
-</header>
-<section class="site-banner-wrap" aria-label="Free Fire Server Change Service banner">
-  <img class="site-banner" src="site-banner.jpg" alt="Free Fire Server Change Service">
-</section>
-<main id="home">
-<section class="hero wrap">
-  <div class="hero-copy"><div class="eyebrow" data-i18n="eyebrow">OFFICIAL SERVICE</div><h1 data-i18n="heroTitle">Change your Free Fire server with a clear, guided request.</h1><p data-i18n="heroText">Submit your requested region, review the information, and follow the available service instructions.</p><div class="actions"><a class="btn primary" href="#service" data-i18n="start">Start a request</a><a class="btn ghost" href="#how" data-i18n="learn">Learn more</a></div></div>
-  <div class="hero-card"><div class="live-dot"></div><span data-i18n="status">Service status</span><strong>ONLINE</strong><small data-i18n="statusText">Requests are currently being accepted.</small></div>
-</section>
-<section class="stats wrap"><div class="stat"><strong>287</strong><span data-i18n="weekly">customers changed their server this week</span></div><div class="stat"><strong>23</strong><span data-i18n="regionsCount">regions available</span></div><div class="stat"><strong>5</strong><span data-i18n="languages">languages available</span></div><div class="stat"><strong>24/7</strong><span data-i18n="access">website access</span></div></section>
-<section id="service" class="section wrap"><div class="section-head"><div><div class="eyebrow" data-i18n="serviceEyebrow">SERVER CHANGE</div><h2 data-i18n="serviceTitle">Choose your destination</h2></div><p data-i18n="serviceText">Select your current region and requested destination. Availability can depend on the authorized service.</p></div>
-<form id="requestForm" class="request-card"><div class="grid"><label><span data-i18n="current">Current region</span><select id="current" required><option value="" selected disabled data-i18n="selectCurrent">Select current region</option><option value="Middle East & North Africa (MENA)">Middle East & North Africa (MENA)</option><option value="Europe (EU)">Europe (EU)</option><option value="North America (NA)">North America (NA)</option><option value="Latin America (LATAM)">Latin America (LATAM)</option><option value="Brazil (BR)">Brazil (BR)</option><option value="India (IND)">India (IND)</option><option value="Indonesia (ID)">Indonesia (ID)</option><option value="Thailand (TH)">Thailand (TH)</option><option value="Vietnam (VN)">Vietnam (VN)</option><option value="Singapore (SG)">Singapore (SG)</option><option value="Malaysia (MY)">Malaysia (MY)</option><option value="Philippines (PH)">Philippines (PH)</option><option value="Pakistan (PK)">Pakistan (PK)</option><option value="Bangladesh (BD)">Bangladesh (BD)</option><option value="Taiwan (TW)">Taiwan (TW)</option><option value="South Korea (KR)">South Korea (KR)</option><option value="Japan (JP)">Japan (JP)</option><option value="Russia & CIS">Russia & CIS</option><option value="Turkey (TR)">Turkey (TR)</option><option value="Middle East (ME)">Middle East (ME)</option><option value="Africa">Africa</option><option value="South America">South America</option><option value="Central America">Central America</option></select></label><label><span data-i18n="destination">Destination region</span><select id="destination" required><option value="" selected disabled data-i18n="selectDestination">Select destination region</option><option value="Middle East & North Africa (MENA)">Middle East & North Africa (MENA)</option><option value="Europe (EU)">Europe (EU)</option><option value="North America (NA)">North America (NA)</option><option value="Latin America (LATAM)">Latin America (LATAM)</option><option value="Brazil (BR)">Brazil (BR)</option><option value="India (IND)">India (IND)</option><option value="Indonesia (ID)">Indonesia (ID)</option><option value="Thailand (TH)">Thailand (TH)</option><option value="Vietnam (VN)">Vietnam (VN)</option><option value="Singapore (SG)">Singapore (SG)</option><option value="Malaysia (MY)">Malaysia (MY)</option><option value="Philippines (PH)">Philippines (PH)</option><option value="Pakistan (PK)">Pakistan (PK)</option><option value="Bangladesh (BD)">Bangladesh (BD)</option><option value="Taiwan (TW)">Taiwan (TW)</option><option value="South Korea (KR)">South Korea (KR)</option><option value="Japan (JP)">Japan (JP)</option><option value="Russia & CIS">Russia & CIS</option><option value="Turkey (TR)">Turkey (TR)</option><option value="Middle East (ME)">Middle East (ME)</option><option value="Africa">Africa</option><option value="South America">South America</option><option value="Central America">Central America</option></select></label><label><span data-i18n="player">Player ID</span><input id="player" inputmode="numeric" required placeholder="Enter your Player ID" data-i18n-placeholder="playerPlaceholder"></label><label><span data-i18n="email">Email</span><input id="email" type="email" required placeholder="you@example.com" data-i18n-placeholder="emailPlaceholder"></label></div><label class="check"><input id="confirm" type="checkbox" required><span data-i18n="confirm">I confirm that the information above is correct.</span></label><button class="btn primary full" type="submit" data-i18n="continue">Continue</button><p id="message" class="message"></p></form>
-<div id="reviewPanel" class="review-panel" hidden>
-  <div class="review-head"><div><div class="eyebrow" data-i18n="reviewEyebrow">REVIEW</div><h3 data-i18n="reviewTitle">Review your request</h3></div><span class="review-step" data-i18n="stepReview">03 Review</span></div>
-  <div class="review-grid">
-    <div><small data-i18n="current">Current region</small><strong id="reviewCurrent"></strong></div>
-    <div><small data-i18n="destination">Destination region</small><strong id="reviewDestination"></strong></div>
-    <div><small data-i18n="player">Player ID</small><strong id="reviewPlayer"></strong></div>
-    <div><small data-i18n="email">Email</small><strong id="reviewEmail"></strong></div>
+  <div class="header-tools">
+    <select id="language" aria-label="Language" data-i18n-aria="languageLabel">
+      <option value="en">English</option><option value="fr">Français</option><option value="ar">العربية</option><option value="pt">Português</option><option value="es">Español</option>
+    </select>
+    <button class="menu" id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
   </div>
-  <div class="review-actions"><button id="editRequest" class="btn ghost" type="button" data-i18n="editRequest">Edit request</button><button id="confirmRequest" class="btn primary" type="button" data-i18n="continuePayment">Continue to payment</button></div>
-</div></section>
-<section id="track" class="section wrap track-section"><div class="section-head"><div><div class="eyebrow" data-i18n="trackEyebrow">TRACK REQUEST</div><h2 data-i18n="trackTitle">Check your request status</h2></div><p data-i18n="trackText">Enter your request reference to view its latest status on this device.</p></div><div class="track-card"><div class="track-input"><label><span data-i18n="referenceLabel">Request reference</span><input id="trackRef" placeholder="CSF-XXXXXX" autocomplete="off"></label><button id="trackBtn" class="btn primary" type="button" data-i18n="trackButton">Track request</button></div><div id="trackResult" class="track-result" aria-live="polite"></div></div></section>
-<section id="how" class="section wrap"><div class="section-head"><div><div class="eyebrow" data-i18n="processEyebrow">PROCESS</div><h2 data-i18n="howTitle">How it works</h2></div></div><div class="steps"><article><b>01</b><h3 data-i18n="step1t">Submit</h3><p data-i18n="step1">Choose the current and requested region and send your request.</p></article><article><b>02</b><h3 data-i18n="step2t">Review</h3><p data-i18n="step2">Review the information before continuing.</p></article><article><b>03</b><h3 data-i18n="step3t">Follow up</h3><p data-i18n="step3">Use the request reference to follow the service status.</p></article></div></section>
-<section id="contact" class="section wrap contact"><div><div class="eyebrow" data-i18n="contactEyebrow">CONTACT</div><h2 data-i18n="contactTitle">Need help?</h2><p><span data-i18n="contactText">If you experience any issue with your request, please contact our support team at</span> <a class="support-email" href="mailto:ffchangerserver@support.com" data-i18n="supportEmail">ffchangerserver@support.com</a>.</p></div><a class="btn ghost" href="mailto:ffchangerserver@support.com" data-i18n="supportEmail">ffchangerserver@support.com</a></section>
+</header>
+
+<main id="home">
+<section class="banner-wrap">
+  <img class="site-banner" src="site-banner.jpg" alt="Free Fire Server Change">
+</section>
+
+<section class="hero wrap">
+  <div class="hero-copy">
+    <div class="eyebrow"><span class="pulse"></span><span data-i18n="eyebrow">SERVER CHANGE SERVICE</span></div>
+    <h1 data-i18n="heroTitle">A cleaner way to submit your <em>server change</em> request.</h1>
+    <p data-i18n="heroText">Choose your current region, select a destination, review your details and receive a request reference before payment.</p>
+    <div class="actions">
+      <a class="btn primary" href="#service" data-i18n="start">Start a request <span>→</span></a>
+      <a class="btn ghost" href="track.html" data-i18n="trackCta">Track a request</a>
+    </div>
+    <div class="hero-note"><span>✓</span><span data-i18n="heroNote">Guided form • Request reference • Multilingual interface</span></div>
+  </div>
+  <aside class="hero-panel">
+    <div class="panel-top"><span data-i18n="status">Service status</span><span class="status-pill"><i></i> <b>ONLINE</b></span></div>
+    <div class="panel-number">01</div>
+    <h3 data-i18n="panelTitle">Start with the basics</h3>
+    <p data-i18n="panelText">Your request is reviewed before you continue to the payment step.</p>
+    <div class="mini-progress"><span></span></div>
+    <div class="mini-labels"><span>01 <small data-i18n="stepMini1">Request</small></span><span>02 <small data-i18n="stepMini2">Review</small></span><span>03 <small data-i18n="stepMini3">Payment</small></span></div>
+  </aside>
+</section>
+
+<section class="stats wrap" aria-label="Service features">
+  <div class="stat"><strong>23</strong><span data-i18n="regionsCount">regions available</span></div>
+  <div class="stat"><strong>5</strong><span data-i18n="languages">languages available</span></div>
+  <div class="stat"><strong>3</strong><span data-i18n="stepsCount">simple steps</span></div>
+  <div class="stat"><strong>24/7</strong><span data-i18n="access">website access</span></div>
+</section>
+
+<section id="service" class="section wrap">
+  <div class="section-head">
+    <div><div class="eyebrow" data-i18n="serviceEyebrow">REQUEST</div><h2 data-i18n="serviceTitle">Tell us where you're moving</h2></div>
+    <p data-i18n="serviceText">Use the form below. You will see a review screen before the request is created.</p>
+  </div>
+  <div class="request-shell">
+    <div class="stepper"><span class="active"><b>01</b><i data-i18n="stepLabel1">Details</i></span><span><b>02</b><i data-i18n="stepLabel2">Review</i></span><span><b>03</b><i data-i18n="stepLabel3">Payment</i></span></div>
+    <form id="requestForm" class="request-card">
+      <div class="grid">
+        <label><span data-i18n="current">Current region</span><select id="current" required><option value="" selected disabled data-i18n="selectCurrent">Select current region</option></select></label>
+        <label><span data-i18n="destination">Destination region</span><select id="destination" required><option value="" selected disabled data-i18n="selectDestination">Select destination region</option></select></label>
+        <label><span data-i18n="player">Player ID</span><input id="player" inputmode="numeric" pattern="[0-9]{5,15}" minlength="5" maxlength="15" required placeholder="Enter your Player ID" data-i18n-placeholder="playerPlaceholder"></label>
+        <label><span data-i18n="email">Email</span><input id="email" type="email" autocomplete="email" required placeholder="you@example.com" data-i18n-placeholder="emailPlaceholder"></label>
+      </div>
+      <label class="check"><input id="confirm" type="checkbox" required><span data-i18n="confirm">I confirm that the information above is correct.</span></label>
+      <button class="btn primary full" type="submit"><span data-i18n="continue">Review request</span><span>→</span></button>
+      <p id="message" class="message" role="alert"></p>
+      <p class="privacy-note">🔒 <span data-i18n="privacy">Only the information required for this request is collected in this browser interface.</span></p>
+    </form>
+
+    <div id="reviewPanel" class="review-panel" hidden>
+      <div class="review-head"><div><div class="eyebrow" data-i18n="reviewEyebrow">REVIEW</div><h3 data-i18n="reviewTitle">Check your request</h3></div><span class="review-step">02</span></div>
+      <div class="review-grid">
+        <div><small data-i18n="current">Current region</small><strong id="reviewCurrent"></strong></div>
+        <div><small data-i18n="destination">Destination region</small><strong id="reviewDestination"></strong></div>
+        <div><small data-i18n="player">Player ID</small><strong id="reviewPlayer"></strong></div>
+        <div><small data-i18n="email">Email</small><strong id="reviewEmail"></strong></div>
+      </div>
+      <div class="review-actions"><button id="editRequest" class="btn ghost" type="button" data-i18n="editRequest">Edit</button><button id="confirmRequest" class="btn primary" type="button" data-i18n="continuePayment">Continue to payment →</button></div>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="section wrap">
+  <div class="section-head"><div><div class="eyebrow" data-i18n="processEyebrow">PROCESS</div><h2 data-i18n="howTitle">Three clear steps</h2></div><p data-i18n="processText">Everything is organized so you know what happens next.</p></div>
+  <div class="steps">
+    <article><div class="step-icon">01</div><h3 data-i18n="step1t">Submit details</h3><p data-i18n="step1">Select the current region, destination, Player ID and email.</p></article>
+    <article><div class="step-icon">02</div><h3 data-i18n="step2t">Review</h3><p data-i18n="step2">Check every detail before a request reference is created.</p></article>
+    <article><div class="step-icon">03</div><h3 data-i18n="step3t">Continue</h3><p data-i18n="step3">Use your reference to track the request and continue with the available payment flow.</p></article>
+  </div>
+</section>
+
+<section class="section wrap trust-strip">
+  <div><span class="trust-icon">✓</span><div><strong data-i18n="trust1t">Guided submission</strong><small data-i18n="trust1">No confusing multi-page form.</small></div></div>
+  <div><span class="trust-icon">⌁</span><div><strong data-i18n="trust2t">Request reference</strong><small data-i18n="trust2">Keep your reference for tracking.</small></div></div>
+  <div><span class="trust-icon">◎</span><div><strong data-i18n="trust3t">Five languages</strong><small data-i18n="trust3">English, French, Arabic, Portuguese and Spanish.</small></div></div>
+</section>
+
+<section id="faq" class="section wrap">
+  <div class="section-head"><div><div class="eyebrow">FAQ</div><h2 data-i18n="faqTitle">Frequently asked questions</h2></div></div>
+  <div class="faq">
+    <details open><summary data-i18n="faq1q">What happens after I submit?</summary><p data-i18n="faq1a">You first review the details. After confirmation, a unique request reference is created and you continue to the payment page.</p></details>
+    <details><summary data-i18n="faq2q">Can I track my request?</summary><p data-i18n="faq2a">Yes. Keep your request reference and use the Track page. This front-end version stores requests in the current browser.</p></details>
+    <details><summary data-i18n="faq3q">Is this an official Garena service?</summary><p data-i18n="faq3a">No official affiliation with Garena is claimed by this website. Service availability depends on the actual authorized service behind the request.</p></details>
+  </div>
+</section>
+
+<section id="track" class="section wrap track-section">
+  <div class="track-cta"><div><div class="eyebrow" data-i18n="trackEyebrow">TRACK REQUEST</div><h2 data-i18n="trackTitle">Already have a reference?</h2><p data-i18n="trackText">Open the tracking page and enter your request reference.</p></div><a class="btn primary" href="track.html" data-i18n="trackButton">Track request →</a></div>
+</section>
+
+<section id="contact" class="section wrap">
+  <div class="contact"><div><div class="eyebrow" data-i18n="contactEyebrow">SUPPORT</div><h2 data-i18n="contactTitle">Need help?</h2><p><span data-i18n="contactText">Contact our support team at</span> <a href="mailto:FreeFireLike@support.com">FreeFireLike@support.com</a></p></div><a class="btn ghost" href="mailto:FreeFireLike@support.com" data-i18n="emailSupport">Email support</a></div>
+</section>
 </main>
-<footer><span>© <span id="year"></span> Changer Server Free Fire</span><span data-i18n="footer">Service information and request interface.</span></footer>
-<script src="app-v3.js?v=3"></script>
-</body></html>
+<footer><span>© <span id="year"></span> Free Fire Server Change</span><span data-i18n="footer">Request interface • Multilingual • Mobile friendly</span></footer>
+<script src="app-v3.js?v=4"></script>
+</body>
+</html>
