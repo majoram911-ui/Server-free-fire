@@ -9,7 +9,7 @@
 <title>Free Fire Server Change</title>
 <link rel="stylesheet" href="style-v4.css?v=20260922-2">
 <link rel="icon" type="image/jpeg" href="site-logo.jpg">
-<style>.server-route-card{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;margin:0 0 18px;padding:14px;border:1px solid rgba(255,194,26,.2);border-radius:18px;background:rgba(255,255,255,.025)}.server-box{padding:14px;border-radius:14px;background:rgba(255,255,255,.035);text-align:center;min-width:0}.server-label{display:block;font-size:10px;letter-spacing:.12em;color:#9aa5b1;margin-bottom:6px}.server-box strong{display:block;color:#fff;font-size:14px;overflow-wrap:anywhere}.server-arrow{font-size:26px;color:#ffc21a;font-weight:800}.server-route-card[dir="rtl"] .server-arrow{transform:scaleX(-1)}@media(max-width:560px){.server-route-card{gap:7px;padding:10px}.server-box{padding:11px 7px}.server-box strong{font-size:12px}.server-arrow{font-size:21px}}</style></head>
+<style>.server-route-card{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;margin:0 0 18px;padding:14px;border:1px solid rgba(255,194,26,.2);border-radius:18px;background:rgba(255,255,255,.025)}.server-box{padding:14px;border-radius:14px;background:rgba(255,255,255,.035);text-align:center;min-width:0}.server-label{display:block;font-size:10px;letter-spacing:.12em;color:#9aa5b1;margin-bottom:6px}.server-box strong{display:block;color:#fff;font-size:14px;overflow-wrap:anywhere}.server-arrow{font-size:26px;color:#ffc21a;font-weight:800}.server-route-card[dir="rtl"] .server-arrow{transform:scaleX(-1)}@media(max-width:560px){.server-route-card{gap:7px;padding:10px}.server-box{padding:11px 7px}.server-box strong{font-size:12px}.server-arrow{font-size:21px}}</style><style>.language-button{width:40px;height:40px;border:1px solid rgba(255,211,74,.28);border-radius:50%;background:linear-gradient(135deg,#171b24,#0b0e14);color:#ffd34a;display:grid;place-items:center;font-size:20px;cursor:pointer;box-shadow:0 6px 20px rgba(255,157,26,.10);padding:0}.language-button:hover{border-color:rgba(255,211,74,.55);box-shadow:0 8px 24px rgba(255,157,26,.16)}.language-select-hidden{position:absolute!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}.language-menu{position:absolute;right:0;top:48px;display:none;min-width:145px;padding:6px;border:1px solid rgba(255,211,74,.22);border-radius:14px;background:#10141c;box-shadow:0 14px 35px rgba(0,0,0,.45);z-index:100}.language-menu.open{display:block}.language-menu button{display:block;width:100%;padding:9px 10px;border:0;border-radius:9px;background:transparent;color:#dbe2ea;text-align:left;cursor:pointer}.language-menu button:hover{background:rgba(255,194,26,.1);color:#ffd34a}</style></head>
 <body>
 <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
 <header class="header" id="top">
@@ -26,9 +26,7 @@
     <a href="#contact" data-i18n="contact">Contact</a>
   </nav>
   <div class="header-tools">
-    <select id="language" aria-label="Language" data-i18n-aria="languageLabel">
-      <option value="en">English</option><option value="fr">Français</option><option value="pt">Português</option><option value="es">Español</option>
-    </select>
+    <button id="languageButton" class="language-button" type="button" aria-label="Language" data-i18n-aria="languageLabel" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true">🌐</span></button><select id="language" class="language-select-hidden" aria-hidden="true" tabindex="-1"><option value="en">English</option><option value="fr">Français</option><option value="pt">Português</option><option value="es">Español</option></select>
     <button class="menu" id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
   </div>
 </header>
