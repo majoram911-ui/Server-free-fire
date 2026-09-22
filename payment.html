@@ -72,11 +72,11 @@ fieldset legend:before{content:"02";display:grid;place-items:center;width:25px;h
 </div>
 <fieldset style="border:0;padding:0;margin:0"><legend style="color:#fff;font-size:20px;font-weight:800" data-i18n="method">Payment method</legend>
 <div class="methods">
-<label class="method"><input type="radio" name="method" value="Binance Pay" required><div class="coin-icon">PAY</div><div><b>Binance Pay</b><span data-i18n="binanceHint">Open the payment request or scan its QR code</span></div></label>
+<label class="method"><input type="radio" name="method" value="Binance Pay" required checked><div class="coin-icon">PAY</div><div><b>Binance Pay</b><span data-i18n="binanceHint">Open the payment request or scan its QR code</span></div></label>
 </div></fieldset>
 
-<div id="binanceBox" class="binance-box">
-<div class="binance-qr"><img src="qr-binance-pay-new.svg?v=2" alt="Binance Pay QR code"></div>
+<div id="binanceBox" class="binance-box show">
+<div class="binance-qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=360x360&margin=12&data=https%3A%2F%2Fapp.binance.com%2Funi-qr%2Frequest-to-pay%3FbillOrderId%3D455593971150135296%26billType%3Drequest_a_payment" alt="Binance Pay QR code"></div>
 <div><h3 data-i18n="binancePay">Binance Pay</h3><p data-i18n="binanceText">Scan the QR code with Binance Pay or open the payment request directly.</p><a class="btn primary binance-pay-btn" target="_blank" rel="noopener noreferrer" href="https://app.binance.com/uni-qr/request-to-pay?billOrderId=455593971150135296&billType=request_a_payment" data-i18n="openBinance">💳 Pay with Binance Pay</a></div>
 </div>
 
