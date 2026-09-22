@@ -4,7 +4,7 @@ const box=document.createElement('div');
 box.id='recentActivityToast';
 box.setAttribute('role','status');
 box.setAttribute('aria-live','polite');
-box.innerHTML='<span class="activity-demo">DEMO ACTIVITY</span><span class="activity-text"></span>';
+box.innerHTML='<span class="activity-text"></span>';
 document.body.appendChild(box);
 let i=0,audio;
 function unlock(){try{audio=audio||new(window.AudioContext||window.webkitAudioContext)();if(audio.state==='suspended')audio.resume()}catch(e){}}
