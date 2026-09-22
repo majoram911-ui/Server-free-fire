@@ -1,0 +1,43 @@
+name: Build InfinityFree htdocs ZIP
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Vercel source
+        uses: actions/checkout@v4
+
+      - name: Build htdocs ZIP
+        run: |
+          zip -j Server-free-fire-htdocs.zip \
+            index.html \
+            payment.html \
+            track.html \
+            admin.html \
+            style-v3.css \
+            style-v4.css \
+            admin.css \
+            admin-v2.css \
+            app-v3.js \
+            activity.js \
+            admin.js \
+            visitors.js \
+            qr-bep20.png \
+            qr-binance-pay-new.svg \
+            qr-binance-pay.png \
+            qr-erc20.png \
+            qr-trc20.png \
+            site-banner.jpg \
+            site-logo.jpg
+
+      - name: Upload ZIP
+        uses: actions/upload-artifact@v7
+        with:
+          name: Server-free-fire-htdocs
+          path: Server-free-fire-htdocs.zip
+          archive: false
+          retention-days: 7
