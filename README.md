@@ -1,5 +1,6 @@
 # Changer Server Free Fire — Mobile UX Upgrade
 
+
 Updated with:
 - Mobile-first responsive layout
 - 23 translated region choices in Current/Destination selectors
