@@ -1,7 +1,7 @@
 (() => {
   const key = "ff_active_visitor_" + Math.random().toString(36).slice(2);
-  const api = "https://ezooggzcdybssxsukkxn.supabase.co/rest/v1/active_visitors";
-  const anonKey = "sb_publishable_-ZDAj5K3P_y1PUFMnEahGg_rkxNjgS8";
+  const api = "https://cjeooxkjxwpfalyapbhy.supabase.co/rest/v1/active_visitors";
+  const anonKey = "sb_publishable_rD4-qe1hJ7QZ0uQnsEt87w_6zj3BFnj";
 
   if (!anonKey) return;
 
